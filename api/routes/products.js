@@ -27,6 +27,7 @@ router.post('/', (req, res, next) => {
   });
 });
 
+//exec same as then?
 router.get('/:productId', (req, res, next) => {
   const id = req.params.productId;
   Product.findById(id).exec()
