@@ -9,8 +9,10 @@ const orderRoutes = require('./api/routes/orders');
 
 mongoose.connect('mongodb+srv://node-shop-user:' + process.env.MONGO_ATLAS_PW + 'node-shop-password@node-rest-shop-cluster-0-uwkwd.mongodb.net/test?retryWrites=true&w=majority', 
 {
-  useMongoClient: true
-})
+  // useMongoClient: true
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 app.use(morgan('dev'));
 app.use(bodyParser.urlencoded({extended: false}));
