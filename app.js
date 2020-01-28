@@ -7,6 +7,7 @@ const mongoose = require('mongoose');
 const productRoutes = require('./api/routes/products');
 const orderRoutes = require('./api/routes/orders');
 
+//update mongo connection
 mongoose.connect('mongodb+srv://node-shop-user:' + process.env.MONGO_ATLAS_PW + 'node-shop-password@node-rest-shop-cluster-0-uwkwd.mongodb.net/test?retryWrites=true&w=majority', 
 {
   // useMongoClient: true
