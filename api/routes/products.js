@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 
 const Product = require('../../models/product');
 
+//fetch vs get?
 router.get('/', (req, res, next) => {
   // res.status(200).json({
   //   message: 'Handling GET requests to /products'
